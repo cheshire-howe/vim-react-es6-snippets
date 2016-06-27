@@ -51,7 +51,7 @@ snippet jsx
 snippet pt
 	propTypes: {
 		${1}: React.PropTypes.${2:string}
-	}
+	};
 snippet rcc
 	import React, { PropTypes, Component } from 'react';
 
@@ -70,7 +70,7 @@ snippet rcc
 
 	export default $1;
 snippet cc
-	class _${1:ClassName} extends Component {
+	class ${1:ClassName} extends Component {
 
 		render() {
 			return (
@@ -79,31 +79,31 @@ snippet cc
 		}
 	}
 
-	export const $1 = _$1
+	export const $1;
 snippet slc
-	const _${1:ClassName} = (props) => {
+	const ${1:ClassName} = (props) => {
 		return (
 			${0:<div />}
 		)
-	}
+	};
 
-	_$1.propTypes = {
+	$1.propTypes = {
 
-	}
+	};
 snippet rslc
-	import React, { PropTypes } from 'react'
+	import React, { PropTypes } from 'react';
 
-	const _${1:ClassName} = (props) => {
+	const ${1:ClassName} = (props) => {
 		return (
 			${0:<div />}
 		)
-	}
+	};
 
-	_$1.propTypes = {
+	$1.propTypes = {
 
-	}
+	};
 
-	export default _$1
+	export default $1;
 snippet ren
 	render() {
 		return (
